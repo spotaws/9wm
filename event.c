@@ -452,8 +452,7 @@ reparent(XReparentEvent * e)
 
 #ifdef	SHAPE
 void
-shapenotify(e)
-     XShapeEvent *e;
+shapenotify(XShapeEvent *e)
 {
 	Client *c;
 

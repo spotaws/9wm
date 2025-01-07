@@ -303,7 +303,7 @@ misleep(int msec)
 }
 
 int
-sweepdrag(Client * c, XButtonEvent * e0, void (*recalc) ())
+sweepdrag(Client * c, XButtonEvent * e0, void (*recalc) (Client *, int, int))
 {
 	XEvent ev;
 	int idle;

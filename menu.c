@@ -124,8 +124,7 @@ spawn(ScreenInfo * s, char *prog)
 }
 
 void
-reshape(c)
-     Client *c;
+reshape(Client *c)
 {
 	int odx, ody;
 
@@ -160,9 +159,7 @@ move(Client * c)
 }
 
 void
-delete(c, shift)
-     Client *c;
-     int shift;
+delete(Client *c, int shift)
 {
 	if (c == 0)
 		return;
@@ -231,9 +228,7 @@ unhide(int n, int map)
 }
 
 void
-unhidec(c, map)
-     Client *c;
-     int map;
+unhidec(Client *c, int map)
 {
 	int i;
 
@@ -246,9 +241,7 @@ unhidec(c, map)
 }
 
 void
-renamec(c, name)
-     Client *c;
-     char *name;
+renamec(Client *c, char *name)
 {
 	int i;
 

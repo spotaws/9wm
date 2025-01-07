@@ -382,8 +382,7 @@ sendcmessage(Window w, Atom a, long x, int isroot)
 }
 
 void
-sendconfig(c)
-     Client *c;
+sendconfig(Client *c)
 {
 	XConfigureEvent ce;
 
@@ -401,7 +400,7 @@ sendconfig(c)
 }
 
 void
-sighandler(void)
+sighandler(int)
 {
 	signalled = 1;
 }
